@@ -29,18 +29,18 @@ Ledger devices such as Nano S, NanoS+, Ledger Stax or Ledger Flex are supported.
 
 1. Clone the repository app-bitcoin-clone-boilerplate.
 ```bash 
-git clone https://github.com/gonner22/app-bitcoin-clone-boilerplate --recurse-submodules
+git clone https://github.com/AIPowerGrid/app-aipg-clone-boilerplate --recurse-submodules
 ```
 2. Navigate into the cloned directory.
 ```bash
-cd app-bitcoin-clone-boilerplate
+cd app-aipg-clone-boilerplate
 ```
 3. To begin developing, first connect your Ledger device to your PC and unlock it. Ensure it's displayed on the dashboard (not within another app). Then, execute the following command to download the necessary image and enter the container. The container will be located at the "/app" path.
 
    **Please note that all Ledger devices are compatible except for the Nano X, which is not currently supported due to technical limitations of Ledger.**
 
 ```bash
-docker run --rm -ti  -v "$(realpath .):/app" --privileged -v "/dev/bus/usb:/dev/bus/usb" --user root ghcr.io/gonner22/ledger-app-builder-legacy:latest
+docker run --rm -ti  -v "$(realpath .):/app" --privileged -v "/dev/bus/usb:/dev/bus/usb" --user root ghcr.io/aipg/ledger-app-builder-legacy:latest
 ```
 4. You can choose which device to compile for by setting the BOLOS_SDK environment variable to the following values:
 
@@ -86,18 +86,18 @@ make load
 
 1. Clone the repository app-bitcoin-clone-boilerplate.
 ```bash 
-git clone https://github.com/gonner22/app-bitcoin-clone-boilerplate --recurse-submodules
+git clone https://github.com/AIPowerGrid/app-aipg-clone-boilerplate --recurse-submodules
 ```
 2. Navigate into the cloned directory.
 ```bash
-cd app-bitcoin-clone-boilerplate
+cd app-aipg-clone-boilerplate
 ```
 3. To begin developing, first connect your Ledger device to your PC and unlock it. Ensure it's displayed on the dashboard (not within another app). Then, execute the following command to download the necessary image and enter the container. The container will be located at the "/app" path.
 
    **Please note that all Ledger devices are compatible except for the Nano X, which is not currently supported due to technical limitations of Ledger.**
 
 ```bash
-docker run --rm -ti --privileged -v "$(Get-Location):/app" ghcr.io/gonner22/ledger-app-builder-legacy:latest
+docker run --rm -ti --privileged -v "$(Get-Location):/app" ghcr.io/AIPowerGrid/ledger-app-builder-legacy:latest
 ```
 
 4. You can choose which device to compile for by setting the BOLOS_SDK environment variable to the following values:
@@ -165,18 +165,18 @@ python -m ledgerblue.runScript --scp --fileName bin/app.apdu --elfFile bin/app.e
 
 1. Clone the repository app-bitcoin-clone-boilerplate.
 ```bash 
-git clone https://github.com/gonner22/app-bitcoin-clone-boilerplate --recurse-submodules
+git clone https://github.com/AIPowerGrid/app-aipg-clone-boilerplate --recurse-submodules
 ```
 2. Navigate into the cloned directory.
 ```bash
-cd app-bitcoin-clone-boilerplate
+cd app-aipg-clone-boilerplate
 ```
 3. To begin developing, first connect your Ledger device to your PC and unlock it. Ensure it's displayed on the dashboard (not within another app). Then, execute the following command to download the necessary image and enter the container. The container will be located at the "/app" path.
 
    **Please note that all Ledger devices are compatible except for the Nano X, which is not currently supported due to technical limitations of Ledger.**
 
 ```bash
-sudo docker run  --rm -ti --user root --privileged -v "$(pwd -P):/app" ghcr.io/gonner22/ledger-app-builder-legacy:latest
+sudo docker run  --rm -ti --user root --privileged -v "$(pwd -P):/app" ghcr.io/AIPowerGrid/ledger-app-builder-legacy:latest
 ```
 
 4. You can choose which device to compile for by setting the BOLOS_SDK environment variable to the following values:
