@@ -40,7 +40,7 @@ cd app-aipg-clone-boilerplate
    **Please note that all Ledger devices are compatible except for the Nano X, which is not currently supported due to technical limitations of Ledger.**
 
 ```bash
-docker run --rm -ti  -v "$(realpath .):/app" --privileged -v "/dev/bus/usb:/dev/bus/usb" --user root ghcr.io/AIPowerGrid/ledger-app-builder-legacy:latest
+docker run --rm -ti  -v "$(realpath .):/app" --privileged -v "/dev/bus/usb:/dev/bus/usb" --user root ghcr.io/aipowergrid/ledger-app-builder-legacy:latest
 ```
 4. You can choose which device to compile for by setting the BOLOS_SDK environment variable to the following values:
 
@@ -97,7 +97,7 @@ cd app-aipg-clone-boilerplate
    **Please note that all Ledger devices are compatible except for the Nano X, which is not currently supported due to technical limitations of Ledger.**
 
 ```bash
-docker run --rm -ti --privileged -v "$(Get-Location):/app" ghcr.io/AIPowerGrid/ledger-app-builder-legacy:latest
+docker run --rm -ti --privileged -v "$(Get-Location):/app" ghcr.io/aipowergrid/ledger-app-builder-legacy:latest
 ```
 
 4. You can choose which device to compile for by setting the BOLOS_SDK environment variable to the following values:
@@ -176,7 +176,7 @@ cd app-aipg-clone-boilerplate
    **Please note that all Ledger devices are compatible except for the Nano X, which is not currently supported due to technical limitations of Ledger.**
 
 ```bash
-sudo docker run  --rm -ti --user root --privileged -v "$(pwd -P):/app" ghcr.io/AIPowerGrid/ledger-app-builder-legacy:latest
+sudo docker run  --rm -ti --user root --privileged -v "$(pwd -P):/app" ghcr.io/aipowergrid/ledger-app-builder-legacy:latest
 ```
 
 4. You can choose which device to compile for by setting the BOLOS_SDK environment variable to the following values:
